@@ -13,10 +13,7 @@ function App() {
   }, []);
 
   const handleAnswer = (answer) => {
-    //setQuestionIndex(questionIndex + 1);
-    
     //we don't want user to be able to choose more than one choice for a question
-    
     if(!userSelected) {
       if(answer === questions[questionIndex].correct) {
         setScore(score + 1);
@@ -24,19 +21,28 @@ function App() {
     }
     //user made a choice, now answer is locked in and we can see the correct/incorrect answers
     setUserSelected(true);
+  }
 
+  const getNextQuestion = () => {
+    setQuestionIndex(questionIndex + 1);
+
+    setUserSelected(false);
   }
 
   //need to wait for the questions to load in
   return questions.length > 0 ? (
     <div className='container'>
       {
-        questionIndex >= questions.length ? (
+        questionIndex >= 10 ? (
           <h1 className='text-3xl text-white font-bold'>
             Your score is {score}
           </h1>
         ) :(
-          <Question questionData={data[questionIndex]} handleAnswer={handleAnswer} userSelected={userSelected} />
+          <Question questionData={data[questionIndex]} 
+            handleAnswer={handleAnswer} 
+            userSelected={userSelected} 
+            getNextQuestion={getNextQuestion}  
+          />
         )}
     </div>
   ): (

@@ -3,7 +3,7 @@ import Answer from './Answer';
 
 //before, i would have to write data[questionIndex].correct, now i can just write correct
 //since i can dereference object props, every question component should just take in the object
-const Question = ({ userSelected, handleAnswer, questionData: { question, correct, incorrect }, }) => {
+const Question = ({ userSelected, handleAnswer, getNextQuestion, questionData: { question, correct, incorrect }, }) => {
   //shuffle the order of the answers so that i wont have the same order every time
   const shuffledAnswers = [correct, ...incorrect].sort(() => Math.random() - 0.5);  
   return (
@@ -38,6 +38,10 @@ const Question = ({ userSelected, handleAnswer, questionData: { question, correc
             : 'bg-white'}
             handleAnswer={() => handleAnswer(shuffledAnswers[3])} 
             answer={shuffledAnswers[3]} />
+          {userSelected && <button onClick={getNextQuestion} className='bg-purple-500 text-black p-4 mt-6 
+            font-semibold rounded'>Next Question
+            </button>
+          }
         </div>
       </div>
     );
