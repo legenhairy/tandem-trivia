@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Tandem Coding Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Goal was to create an application that displays trivia questions with multiple choice answers to choose from. 
 
-## Available Scripts
+## How to Run the Code/ Install Instructions
 
-In the project directory, you can run:
+Note this project was built on a Mac with the Terminal application. This project was set up with the Create React App boilerplate.(https://create-react-app.dev/)
 
-### `npm start`
+1. Open a new Terminal window and clone the repository onto your computer with the below command(git clone).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+git clone https://github.com/legenhairy/tandem-trivia.git
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2. Then, jump into the project folder by running the below cd command.
 
-### `npm test`
+```bash
+cd tandem-trivia
+```
+3. Then, install all the dependencies and node modules.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+```
+4. Finally, run the React project by running npm start.
 
-### `npm run build`
+```bash
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Acceptance Criteria
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [x] A user can view questions.
+- [x] Questions with their multiple choice options must be displayed one at a time.
+- [x] Questions should not repeat in a round.
+- [x] A user can select only 1 answer out of the 4 possible answers.
+- [x] The correct answer must be revealed after a user has submitted their answer.
+- [x] A user can see the score they received at the end of the round.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Additional Features I Would like Added 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. User has the ability to restart the game to try and beat their score after arriving at the score page.
+2. User can share their score to social media networks(like Twitter or Facebook). 
+3. Add a live score update so the user can see their score as they play a round of trivia.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Final Words
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thanks for reading! Have fun playing trivia!
